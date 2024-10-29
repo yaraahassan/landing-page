@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:sans-serif;
+}
+.container{
+    position: relative;
+    background-color: #000;
+    min-height: 100vh; /*كده اخد ارتفاع الشاشه كلها */
+
+}
+header{
+    width: 80%;/* عشان العناصر ميبداش من اول الصفحة */
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto; /*بيوسطن العناصر */
+}
+.logo{
+    margin: 10px 0;
+
+    width:40px;
+}
+
+ul li{
+     display:inline-block; /*حط العناصر جمب بعض */
+    }
+ul li a{
+    color: #fff;
+    margin: 10px;
+    text-decoration: none;
+
+}
+.main{
+    width: 80%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+.text{
+    color:#fff;
+    width: 40%;
+}
+.pic{
+    width: 35%;
+}
+.title{
+    text-transform: uppercase;
+}
+.btn{
+    margin-top: 10px;
+    padding:5px;
+    background-color: #fff;
+    color:#000;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.text p{
+    margin:10px 0 20px;
+}
+.pic img{
+    width:210px;
+}
+.icons img{
+    width:50px;
+     transition: 0.5s;/* بعمل تأخير نص ثانية */
+
+    
+}
+.icons{
+    position:absolute;
+    bottom:4px;
+    /*center pictures */
+     left:50%; 
+    transform: translateX(-50%);
+    
+}
+.icons img:hover{
+
+    cursor: pointer;
+    transform: scale(1.5);  /*بزود الحجم لما يقف عليها بالماوس */
+}
